@@ -1,0 +1,4 @@
+services:
+  speedtestcli:
+    container_name: speedtest-cli
+    image: moutten/speedtest-cli
