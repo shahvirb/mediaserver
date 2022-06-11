@@ -9,3 +9,9 @@ services:
     volumes:
       - /mnt/Media/Videos:/data/tvshows
       - /mnt/Media/Movies:/data/movies
+
+  qbittorrent:
+    volumes:
+      - /mnt/Media/torrent_downloads:/downloads
+      - /mnt/Media/Videos:/downloads/videos
+      - /mnt/Media/Movies:/downloads/movies
