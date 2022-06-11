@@ -2,8 +2,10 @@ services:
   speedtestcli:
     container_name: speedtest-cli
     image: moutten/speedtest-cli
-  
+
   jellyfin:
+    devices:
+      - /dev/dri:/dev/dri
     volumes:
       - /mnt/Media/Videos:/data/tvshows
       - /mnt/Media/Movies:/data/movies
