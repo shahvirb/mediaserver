@@ -1,4 +1,8 @@
 services:
+  radarr:
+    volumes:
+      - /mnt/Media/Movies:/mnt/Media/Movies
+
   sonarr:
     volumes:
       - /mnt/Media/Videos:/mnt/Media/Videos
