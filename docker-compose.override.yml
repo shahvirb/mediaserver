@@ -1,7 +1,7 @@
 services:
   sonarr:
     volumes:
-      - /mnt/Media/Videos:/data/tvshows
+      - /mnt/Media/Videos:/mnt/Media/Videos
 
   speedtestcli:
     container_name: speedtest-cli
@@ -16,6 +16,6 @@ services:
 
   qbittorrent:
     volumes:
-      - /mnt/Media/torrent_downloads:/downloads
-      - /mnt/Media/Videos:/downloads/videos
-      - /mnt/Media/Movies:/downloads/movies
+      - /mnt/Media/torrent_downloads:/mnt/Media/torrent_downloads
+      - /mnt/Media/Videos:/mnt/Media/Videos
+      - /mnt/Media/Movies:/mnt/Media/Movies
