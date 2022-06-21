@@ -25,15 +25,8 @@ services:
       - /mnt/Media/Movies:/mnt/Media/Movies
 
   qbittorrentvpn:
-    environment:
-      VPN_USER: /run/secrets/vpn_user
-    secrets:
-      - vpn_user
-    volumes:
+   volumes:
       - /mnt/Media/torrent_downloads:/mnt/Media/torrent_downloads
       - /mnt/Media/Videos:/mnt/Media/Videos
       - /mnt/Media/Movies:/mnt/Media/Movies
 
-  secrets:
-    vpn_user:
-      file: /home/mediaserver/vpn_user-secret.txt
