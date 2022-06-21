@@ -25,6 +25,8 @@ services:
       - /mnt/Media/Movies:/mnt/Media/Movies
 
   qbittorrentvpn:
+   environment:
+     - STRICT_PORT_FORWARD=no
    volumes:
       - /mnt/Media/torrent_downloads:/mnt/Media/torrent_downloads
       - /mnt/Media/Videos:/mnt/Media/Videos
