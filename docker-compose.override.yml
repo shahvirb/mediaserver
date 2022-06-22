@@ -1,11 +1,4 @@
 services:
-  jellyfin:
-    devices:
-      - /dev/dri:/dev/dri
-    volumes:
-      - /mnt/Media/Videos:/data/tvshows
-      - /mnt/Media/Movies:/data/movies
-
   plex:
     devices:
       - /dev/dri:/dev/dri
